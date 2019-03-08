@@ -5,6 +5,7 @@ class SecretDiary
   end
 
   def unlock
+    "Unlocked"
   end
 
 end

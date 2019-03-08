@@ -5,7 +5,7 @@ describe SecretDiary do
 
     it { is_expected.to respond_to :lock }
 
-    it 'should be lock the diary' do
+    it 'should lock the diary' do
       my_diary = SecretDiary.new
       expect(my_diary.lock).to eq "Locked"
     end
@@ -15,6 +15,11 @@ describe SecretDiary do
   describe '#unlock' do
 
     it { is_expected.to respond_to :unlock }
+
+    it 'should unlock the diary' do
+      my_diary = SecretDiary.new
+      expect(my_diary.unlock).to eq "Unlocked"
+    end
 
   end
 end
