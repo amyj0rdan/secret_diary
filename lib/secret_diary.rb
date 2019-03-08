@@ -15,11 +15,11 @@ class SecretDiary
   end
 
   def add_entry
-    raise "Diary locked - cannot add entry" if @status = "Locked"
+    raise "Diary locked - cannot add entry" if @status == "Locked"
   end
 
   def get_entries
-    raise "Diary locked - cannot get entries" if @status = "Locked"
+    raise "Diary locked - cannot get entries" if @status == "Locked"
   end
 
 end
