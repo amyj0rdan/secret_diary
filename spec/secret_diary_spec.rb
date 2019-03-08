@@ -1,6 +1,15 @@
 require 'secret_diary'
 
 describe SecretDiary do
+
+  describe '#initialize' do
+
+    it 'should be locked when initialized' do
+      my_diary = SecretDiary.new
+      expect(my_diary.status).to eq "Locked"
+    end
+
+  end
   describe '#lock' do
 
     it { is_expected.to respond_to :lock }

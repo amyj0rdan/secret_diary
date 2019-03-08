@@ -1,11 +1,17 @@
 class SecretDiary
 
+  attr_reader :status
+
+  def initialize
+    @status = "Locked"
+  end
+
   def lock
-    "Locked"
+    @status = "Locked"
   end
 
   def unlock
-    "Unlocked"
+    @status = "Unlocked"
   end
 
 end
