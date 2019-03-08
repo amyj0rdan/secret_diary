@@ -4,4 +4,7 @@ class SecretDiary
     "Locked"
   end
 
+  def unlock
+  end
+
 end

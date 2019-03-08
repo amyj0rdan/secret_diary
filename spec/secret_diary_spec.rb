@@ -11,4 +11,10 @@ describe SecretDiary do
     end
 
   end
+
+  describe '#unlock' do
+
+    it { is_expected.to respond_to :unlock }
+
+  end
 end
