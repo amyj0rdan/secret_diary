@@ -20,6 +20,11 @@ describe SecretDiary do
       expect(my_diary.lock).to eq "Locked"
     end
 
+    it 'should lock the diary when unlocked' do
+      my_diary = SecretDiary.new
+      my_diary.unlock
+      expect(my_diary.lock).to eq "Locked"
+    end
   end
 
   describe '#unlock' do
