@@ -15,6 +15,7 @@ class SecretDiary
   end
 
   def add_entry
+    raise "Diary locked - cannot add entry" if @status = "Locked"
   end
 
 end

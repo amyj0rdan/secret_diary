@@ -37,5 +37,10 @@ describe SecretDiary do
 
     it { is_expected.to respond_to :add_entry}
 
+    it 'should raise an error if locked' do
+      my_diary = SecretDiary.new
+      expect { my_diary.add_entry }.to raise_error("Diary locked - cannot add entry")
+    end
+
   end
 end
