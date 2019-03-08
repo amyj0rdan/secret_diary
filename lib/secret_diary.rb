@@ -14,4 +14,7 @@ class SecretDiary
     @status = "Unlocked"
   end
 
+  def add_entry
+  end
+
 end

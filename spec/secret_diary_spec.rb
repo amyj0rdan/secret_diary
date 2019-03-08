@@ -10,6 +10,7 @@ describe SecretDiary do
     end
 
   end
+
   describe '#lock' do
 
     it { is_expected.to respond_to :lock }
@@ -29,6 +30,12 @@ describe SecretDiary do
       my_diary = SecretDiary.new
       expect(my_diary.unlock).to eq "Unlocked"
     end
+
+  end
+
+  describe '#add_entry' do
+
+    it { is_expected.to respond_to :add_entry}
 
   end
 end
