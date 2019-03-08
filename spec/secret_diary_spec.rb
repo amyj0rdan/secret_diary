@@ -43,4 +43,10 @@ describe SecretDiary do
     end
 
   end
+
+  describe '#get_entries' do
+
+    it { is_expected.to respond_to :get_entries }
+
+  end
 end
